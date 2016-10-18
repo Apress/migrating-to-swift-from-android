@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MasterDetail/ViewController.swift"
+            timestampString = "426990140.477849"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "MasterTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MasterDetail.MasterTableViewController.items.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "MasterDetail"
+                  urlString = "file:///Users/sliao/Google%20Drive/SwiftToiOS/iOSBook/MasterDetail/MasterDetail/ViewController.swift"
+                  timestampString = "430797643.05472"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MasterDetail.MasterTableViewController.init (MasterDetail.MasterTableViewController.Type)(style : C.UITableViewStyle) -&gt; MasterDetail.MasterTableViewController"
+                  moduleName = "MasterDetail"
+                  urlString = "file:///Users/sliao/Google%20Drive/SwiftToiOS/iOSBook/MasterDetail/MasterDetail/ViewController.swift"
+                  timestampString = "430797643.054886"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MasterDetail.MasterTableViewController.init (MasterDetail.MasterTableViewController.Type)(nibName : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, bundle : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSBundle&gt;) -&gt; MasterDetail.MasterTableViewController"
+                  moduleName = "MasterDetail"
+                  urlString = "file:///Users/sliao/Google%20Drive/SwiftToiOS/iOSBook/MasterDetail/MasterDetail/ViewController.swift"
+                  timestampString = "430797643.05506"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MasterDetail.MasterTableViewController.init (MasterDetail.MasterTableViewController.Type)() -&gt; MasterDetail.MasterTableViewController"
+                  moduleName = "MasterDetail"
+                  urlString = "file:///Users/sliao/Google%20Drive/SwiftToiOS/iOSBook/MasterDetail/MasterDetail/ViewController.swift"
+                  timestampString = "430797643.055209"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MasterDetail.MasterTableViewController.init (MasterDetail.MasterTableViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; MasterDetail.MasterTableViewController"
+                  moduleName = "MasterDetail"
+                  urlString = "file:///Users/sliao/Google%20Drive/SwiftToiOS/iOSBook/MasterDetail/MasterDetail/ViewController.swift"
+                  timestampString = "430797643.055374"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XUL-Ww-cRf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--0-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="0" id="BYZ-38-t0r" customClass="ViewController" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVT-n8-ovF">
+                                <rect key="frame" x="254" y="185" width="92" height="30"/>
+                                <state key="normal" title="Action Segue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tZ2-2f-DkV" kind="show" identifier="actionSegue" id="Hey-fR-EDI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-yc-g65">
+                                <rect key="frame" x="251" y="385" width="98" height="30"/>
+                                <state key="normal" title="Manual Segue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="eTs-sM-CaD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="6cv-yc-g65" secondAttribute="centerX" id="CEY-Nx-KC3"/>
+                            <constraint firstAttribute="centerY" secondItem="6cv-yc-g65" secondAttribute="centerY" multiplier="0.75" id="N5c-yg-Rmj"/>
+                            <constraint firstAttribute="centerY" secondItem="IVT-n8-ovF" secondAttribute="centerY" multiplier="1.5" id="UH4-ES-cvT"/>
+                            <constraint firstAttribute="centerX" secondItem="IVT-n8-ovF" secondAttribute="centerX" id="UcB-9j-x3a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FzD-EW-EQ6"/>
+                    <connections>
+                        <segue destination="Hue-Ue-dMM" kind="show" identifier="manualSegue" id="mtM-YG-nL2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="136"/>
+        </scene>
+        <!--1-->
+        <scene sceneID="KUa-27-puf">
+            <objects>
+                <viewController title="1" id="tZ2-2f-DkV" customClass="PresentedViewController" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oIR-fB-E5t"/>
+                        <viewControllerLayoutGuide type="bottom" id="wT8-aQ-fqc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JXR-4i-HVP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From Action Segue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k83-DN-cwO">
+                                <rect key="frame" x="226" y="289" width="147" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="k83-DN-cwO" secondAttribute="centerX" id="BKO-GT-7aB"/>
+                            <constraint firstAttribute="centerY" secondItem="k83-DN-cwO" secondAttribute="centerY" id="LSe-8u-VXQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I26-sb-b0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="-162"/>
+        </scene>
+        <!--2-->
+        <scene sceneID="NJ3-ms-jr1">
+            <objects>
+                <viewController title="2" id="Hue-Ue-dMM" customClass="PresentedViewController" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Yu-pm-1cl"/>
+                        <viewControllerLayoutGuide type="bottom" id="XMd-mc-jsm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1qJ-Ts-9Fa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From Manual Segue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGn-b5-zMA">
+                                <rect key="frame" x="223" y="290" width="154.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="VGn-b5-zMA" secondAttribute="centerX" id="U8l-E4-ifr"/>
+                            <constraint firstAttribute="centerY" secondItem="VGn-b5-zMA" secondAttribute="centerY" id="e6Y-pn-Cqd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CsX-y8-eoK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="558"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y8B-7P-6uR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XUL-Ww-cRf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cya-rZ-ruz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ITy-1G-CoF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rwq-sn-tcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-762" y="489"/>
+        </scene>
+    </scenes>
+</document>

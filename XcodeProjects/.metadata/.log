@@ -1,0 +1,16 @@
+!SESSION 2014-10-04 17:31:44.227 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sliao/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sliao/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-10-04 17:32:25.815
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2014-10-04 18:00:34.477
+!MESSAGE Conflicting handlers for org.eclipse.compare.copyAllLeftToRight: {ActionHandler(org.eclipse.compare.contentmergeviewer.ContentMergeViewer$7@5d11684e)} vs {ActionHandler(org.eclipse.compare.contentmergeviewer.ContentMergeViewer$7@21d7089e)}
+
+!ENTRY org.eclipse.ui 4 4 2014-10-04 18:00:34.478
+!MESSAGE Conflicting handlers for org.eclipse.compare.copyAllRightToLeft: {ActionHandler(org.eclipse.compare.contentmergeviewer.ContentMergeViewer$8@14ea1f1d)} vs {ActionHandler(org.eclipse.compare.contentmergeviewer.ContentMergeViewer$8@16a0b3a5)}

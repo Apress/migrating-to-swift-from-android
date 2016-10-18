@@ -1,0 +1,262 @@
+//
+// RentalProperty.swift
+// RentalROI
+//
+// Created by Sean on 8/10/14.
+// Copyright (c) 2014 PdaChoice. All rights reserved.
+//
+
+import Foundation
+
+public class RentalProperty /* implements Serializable */ {
+
+// private static final long serialVersionUID = 2931547086803719756L;
+  
+// private double purchasePrice;
+// private double loanAmt;
+// private double interestRate;
+// private int numOfTerms;
+// private double escrow;
+// private double extra;
+// private double expenses;
+// private double rent;
+  private var purchasePrice = 0.0
+  private var loanAmt = 0.0
+  private var interestRate = 5.0
+  private var numOfTerms = 30
+  private var escrow = 0.0
+  private var extra = 0.0
+  private var expenses = 0.0
+  private var rent = 0.0
+  
+// public static final String KEY_AMO_SAVED = "KEY_AMO_SAVED";
+// public static final String KEY_PROPERTY = "KEY_PROPERTY";
+// private static final String PREFS_NAME = "MyPrefs";
+// private static final int MODE = Context.MODE_PRIVATE; // MODE_WORLD_WRITEABLE
+// private static RentalProperty _sharedInstance = null;
+  struct MyStatic {
+    static let KEY_AMO_SAVED = "KEY_AMO_SAVED";
+    static let KEY_PROPERTY = "KEY_PROPERTY";
+    private static let PREFS_NAME = "MyPrefs";
+    private static let MODE = 0; // probably Android thing
+    private static var _sharedInstance = RentalProperty()
+  }
+  
+// private RentalProperty() {
+//  super();
+//  this.interestRate = 5.0f;
+//  this.numOfTerms = 30;
+// }
+  private init() {
+    // type inferences is preferred
+  }
+  
+// public static RentalProperty sharedInstance() {
+//   if (_sharedInstance == null) {
+//     _sharedInstance = new RentalProperty();
+//   }
+//   return _sharedInstance;
+// }
+  class func sharedInstance() -> RentalProperty {
+    return MyStatic._sharedInstance
+  }
+  
+// public String getAmortizationPersistentKey() {
+//   String aKey = String.format("%.2f-%.3f-%d-%.2f", this.loanAmt, this.interestRate, this.numOfTerms, this.extra);
+//   return aKey;
+// }
+  func getAmortizationPersistentKey() -> String {
+    var aKey = String(format: "%.2f-%.3f-%d-%.2f-%.2f", self.loanAmt, self.interestRate, self.numOfTerms, self.extra, self.getEscrow());
+    return aKey;
+  }
+  
+// public JSONArray getSavedAmortization(Context activity) {
+//   String savedKey = retrieveSharedPref(KEY_AMO_SAVED, activity);
+//   String aKey = this.getAmortizationPersistentKey();
+//   if(savedKey.length() > 0 && savedKey.equals(aKey)) {
+//     String jsonArrayString = retrieveSharedPref(savedKey, activity);
+//     try {
+//       return new JSONArray(jsonArrayString);
+//     } catch (JSONException e) {
+//       return null;
+//     }
+//   } else {
+//     return null;
+//   }
+// }
+  func getSavedAmortization() -> NSArray? {
+    var savedKey = retrieveUserdefault(MyStatic.KEY_AMO_SAVED) as String?
+    var aKey = self.getAmortizationPersistentKey()
+    if let str = savedKey {
+      if(str.utf16Count > 0 && str == aKey) {
+        var jo = retrieveUserdefault(str) as NSArray?
+        return jo
+      }
+    }
+    return nil
+  }
+
+// public boolean saveAmortization(String data, Context activity) {
+//   String aKey = this.getAmortizationPersistentKey();
+//   saveSharedPref(KEY_AMO_SAVED, aKey, activity);
+//   saveSharedPref(aKey, data, activity);
+// }
+  func saveAmortization(data: NSArray) -> Bool {
+    var aKey = self.getAmortizationPersistentKey()
+    saveUserdefault(aKey, forKey: MyStatic.KEY_AMO_SAVED)
+    return saveUserdefault(data, forKey: aKey)
+  }
+  
+// public boolean load(Context activity) {
+//   String jostr = retrieveSharedPref(KEY_PROPERTY, activity);
+//   if(jostr == null) {
+//     return false;
+//   }
+// 
+//   try {
+//     JSONObject jo = new JSONObject(jostr);
+//     this.purchasePrice = jo.getDouble("purchasePrice");
+//     this.loanAmt = jo.getDouble("loanAmt");
+//     this.interestRate = jo.getDouble("interestRate");
+//     this.numOfTerms = jo.getInt("numOfTerms");
+//     this.escrow = jo.getDouble("escrow");
+//     this.extra = jo.getDouble("extra");
+//     this.expenses = jo.getDouble("expenses");
+//     this.rent = jo.getDouble("rent");
+//     return true;
+//   } catch (JSONException e) {
+//     e.printStackTrace();
+//     return false;
+//   }
+// }
+  func load() -> Bool {
+    var data = retrieveUserdefault(MyStatic.KEY_PROPERTY) as NSDictionary?
+    if var jo = data {
+      self.purchasePrice = jo["purchasePrice"] as Double
+      self.loanAmt = jo["loanAmt"] as Double
+      self.interestRate = jo["interestRate"] as Double
+      self.numOfTerms = jo["numOfTerms"]  as Int
+      self.escrow = jo["escrow"] as Double
+      self.extra = jo["extra"] as Double
+      self.expenses = jo["expenses"] as Double
+      self.rent = jo["rent"] as Double
+      return true;
+      
+    } else {
+      return false
+    }
+  }
+  
+// public boolean save(Context activity) {
+//   JSONObject jo = new JSONObject();
+// 
+//   try {
+//     jo.put("purchasePrice", purchasePrice);
+//     jo.put("loanAmt", loanAmt);
+//     jo.put("interestRate", interestRate);
+//     jo.put("numOfTerms", numOfTerms);
+//     jo.put("escrow", escrow);
+//     jo.put("extra", extra);
+//     jo.put("expenses", expenses);
+//     jo.put("rent", rent);
+//   } catch (JSONException e) {
+//     e.printStackTrace();
+//   }
+// 
+//   return this.saveSharedPref(KEY_PROPERTY, jo.toString(), activity);
+// }
+  func save() -> Bool {
+    var jo : [NSObject : AnyObject] = [
+      "purchasePrice": purchasePrice,
+      "loanAmt" : loanAmt,
+      "interestRate" : interestRate,
+      "numOfTerms" : Double(numOfTerms),
+      "escrow" : escrow,
+      "extra" : extra,
+      "expenses" : expenses,
+      "rent" : rent]
+    
+    return self.saveUserdefault(jo, forKey: MyStatic.KEY_PROPERTY)
+  }
+
+  /////////// SharedPreferences usage to NSUserDefaults /////////////////
+  let userDefaults = NSUserDefaults.standardUserDefaults()
+  func saveUserdefault(data:AnyObject,forKey:String)->Bool{
+    userDefaults.setObject(data, forKey: forKey)
+    return userDefaults.synchronize()
+  }
+  
+  func retrieveUserdefault(key: String) -> AnyObject? {
+    var obj: AnyObject? = userDefaults.objectForKey(key)    
+    return obj
+  }
+  
+  func deleteUserDefault(key: String) {
+    self.userDefaults.removeObjectForKey(key)
+  }
+  
+  // JavaBean accessors
+  func getPurchasePrice()-> Double {
+    return purchasePrice;
+  }
+  
+  func setPurchasePrice(purchasePrice: Double) {
+    self.purchasePrice = purchasePrice;
+  }
+  
+  func getLoanAmt()-> Double {
+    return loanAmt;
+  }
+  
+  func setLoanAmt(loanAmt: Double) {
+    self.loanAmt = loanAmt;
+  }
+  
+  func getInterestRate()-> Double {
+    return interestRate;
+  }
+  
+  func setInterestRate(interestRate: Double) {
+    self.interestRate = interestRate;
+  }
+  
+  func getNumOfTerms()-> Int {
+    return numOfTerms;
+  }
+  
+  func setNumOfTerms(numOfTerms: Int) {
+    self.numOfTerms = numOfTerms;
+  }
+  
+  func getEscrow()-> Double {
+    return escrow;
+  }
+  
+  func setEscrow(escrow: Double) {
+    self.escrow = escrow;
+  }
+  
+  func getExtra()-> Double {
+    return extra;
+  }
+  
+  func setExtra(extra: Double) {
+    self.extra = extra;
+  }
+  
+  func getExpenses()-> Double {
+    return expenses;
+  }
+  
+  func setExpenses(expenses: Double) {
+    self.expenses = expenses;
+  }
+  
+  func getRent()-> Double {
+    return rent;
+  }
+  
+  func setRent(rent: Double) {
+    self.rent = rent;
+  }
+}

@@ -1,0 +1,170 @@
+//
+//  EditTextViewController.swift
+//  RentalROI
+//
+//  Created by Sean on 8/8/14.
+//  Copyright (c) 2014 PdaChoice. All rights reserved.
+//
+
+import UIKit
+
+// Java interface to Swift protocol
+protocol EditTextViewControllerDelegate {
+  func onTextEditSaved(tag: Int, text: String);
+  func onTextEditCanceled();
+}
+
+class EditTextViewController : UIViewController, UITextFieldDelegate {
+  
+  @IBOutlet weak var mTextField: UITextField!
+  
+//  // inner interface
+//  interface EditTextViewControllerDelegate {
+//    public void onTextEditSaved(int tag, String text);
+//    public void onTextEditCanceled();
+//  }
+  
+//  private int editTextTag;
+//  private String header;
+//  private String text;
+//  private EditTextViewControllerDelegate delegate;
+//  private View contentView; => in super.view already
+//  private EditText mTextField; => existing IBOutlet
+  var editTextTag: Int!
+  var header = ""
+  var text = ""
+  var delegate: EditTextViewControllerDelegate!
+  
+
+//  @Override
+//  public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+//  contentView = inflater.inflate(R.layout.edittextview_fragment, container, false);
+//  setHasOptionsMenu(true); // enable Option Menu.
+//  
+//  mTextField = (EditText) contentView.findViewById(R.id.tfEditText);
+//  this.mTextField.setText(this.text);
+//  
+//  return contentView;
+//  }
+  override func viewDidLoad() {
+//  contentView = inflater.inflate(R.layout.edittextview_fragment, container, false);
+//  setHasOptionsMenu(true); // enable Option Menu.
+//  mTextField = (EditText) contentView.findViewById(R.id.tfEditText);
+//  this.mTextField.setText(this.text);
+//  return contentView;
+    super.viewDidLoad()
+    mTextField.text = self.text
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardAppeared:", name: UIKeyboardDidShowNotification, object: nil)
+  }
+  
+//  @Override
+//  public void onResume() {
+//    super.onResume();
+//    ((MainActivity) getActivity()).slideIn(contentView, MainActivity.SLIDE_UP); // or SLIDE_LEFT
+//    showKeyboard();
+//    getActivity().setTitle(header);
+//  }
+  override func viewDidAppear(animated: Bool) {
+//    super.onResume();
+//    ((MainActivity) getActivity()).slideIn(contentView, MainActivity.SLIDE_UP); // or SLIDE_LEFT
+//    showKeyboard();
+//    getActivity().setTitle(header);
+    super.viewDidAppear(animated)
+    showKeyboard()
+    self.navigationItem.title = self.header
+  }
+
+//  @Override
+//  public void onPause() {
+//    super.onPause();
+//    hideKeyboard();
+//  }
+  override func viewWillDisappear(animated: Bool) {
+//    super.onPause();
+//    hideKeyboard();
+    super.viewWillDisappear(animated)
+    hideKeyboard()
+  }
+  
+  override func viewDidDisappear(animated: Bool) {
+    super.viewDidDisappear(animated)
+    NSNotificationCenter.defaultCenter().removeObserver(self)
+  }
+
+//  @Override
+//  public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+//    super.onCreateOptionsMenu(menu, inflater);
+//    inflater.inflate(R.menu.edittextview_menu, menu);
+//  }
+  // the navigationBar drawn in storyboard
+
+//  @Override
+//  public boolean onOptionsItemSelected(MenuItem item) {
+//  String returnText = this.mTextField.getText().toString();
+//  if(delegate != null) {
+//  this.delegate.onTextEditSaved(this.getEditTextTag(), returnText);
+//  }
+//  return true;
+//  }
+  @IBAction func doSave(sender: AnyObject) {
+    var returnText = self.mTextField.text
+    if(delegate != nil) {
+      delegate.onTextEditSaved(self.editTextTag, text: returnText)
+    }
+  }
+  
+  @IBAction func doCancel(sender: AnyObject) {
+    if(delegate != nil) {
+      delegate.onTextEditCanceled()
+    }
+  }
+
+//  private void showKeyboard() {
+//  InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+//  imm.showSoftInput(mTextField, InputMethodManager.SHOW_IMPLICIT);
+//  mTextField.selectAll();
+//  }
+  private func showKeyboard() {
+//    InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+//    imm.showSoftInput(mTextField, InputMethodManager.SHOW_IMPLICIT);
+    mTextField.selectAll(self);
+    self.mTextField.becomeFirstResponder()
+  }
+  
+//  private void hideKeyboard() {
+//  InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+//  imm.hideSoftInputFromWindow(mTextField.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+//  }
+  private func hideKeyboard() {
+//    InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+//    imm.hideSoftInputFromWindow(mTextField.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+    self.mTextField.endEditing(true)
+  }
+
+  func keyboardAppeared(notification: NSNotification) {
+
+    if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+      return
+    }
+    
+    var keyboardInfo = notification.userInfo as NSDictionary?
+    
+    var keyboardFrameBegin = keyboardInfo!.valueForKey(UIKeyboardFrameBeginUserInfoKey) as NSValue
+    var keyboardFrameBeginRect: CGRect = keyboardFrameBegin.CGRectValue()
+    var keyboardH = min(keyboardFrameBeginRect.size.width, keyboardFrameBeginRect.size.height)
+    var screenRect: CGRect = UIScreen.mainScreen().bounds;
+    
+    var tfRect: CGRect = self.mTextField.frame;
+    var y = screenRect.size.height - keyboardH - mTextField.frame.size.height - 20;
+    var x = (screenRect.size.width - tfRect.size.width) / 2
+    
+    UIView.animateWithDuration(0.1, animations: { () -> Void in
+    var newRect = CGRectMake(x, y, tfRect.size.width, tfRect.size.height);
+    self.mTextField.frame = newRect
+    })
+  }
+  
+  // public accessors
+  
+}

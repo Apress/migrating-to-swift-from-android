@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tvHeader1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:background="#20008080"
+        android:text="@string/MortgagePayment"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lbPaymentNo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/tvHeader1"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:text="@string/no"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbTotalPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/tvHeader1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:layout_marginRight="@dimen/paddingItem"        
+        android:layout_below="@+id/lbTotalPayment"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:text="@string/principal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbPrincipalPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:layout_marginRight="@dimen/paddingItem"        
+        android:layout_below="@+id/lbPrincipalPayment"
+        android:background="@android:color/darker_gray" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line2"
+
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:text="@string/interest"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbInterestPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:layout_marginRight="@dimen/paddingItem"        
+        android:layout_below="@+id/lbInterestPayment"
+        android:background="@android:color/darker_gray" />    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line3"
+
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:text="@string/escrow"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbEscrowPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:layout_marginRight="@dimen/paddingItem"        
+        android:layout_below="@+id/lbEscrowPayment"
+        android:background="@android:color/darker_gray" />    
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line4"
+
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:text="@string/addlPayment"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbAddlPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line4"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/line5"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:layout_marginRight="@dimen/paddingItem"        
+        android:layout_below="@+id/lbAddlPayment"
+        android:background="@android:color/darker_gray" />    
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line5"
+
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:text="@string/mortgageBalance"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbMorgageDebt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line5"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvHeader2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lbMorgageDebt"
+        android:paddingLeft="@dimen/paddingItem"
+        android:background="#20008080"
+        android:gravity="center_vertical"
+        android:text="@string/MortgagePayment"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/tvHeader2"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:text="@string/equity"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbEquityInvestment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/tvHeader2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:layout_marginRight="@dimen/paddingItem"        
+        android:layout_below="@+id/lbEquityInvestment"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line6"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:text="@string/cashInvest"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbCashInvested"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line6"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/line7"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:layout_marginRight="@dimen/paddingItem"        
+        android:layout_below="@+id/lbCashInvested"
+        android:background="@android:color/darker_gray" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line7"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:text="@string/roi"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbRoi"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightItem"
+        android:layout_below="@+id/line7"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/paddingItem"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:id="@+id/line8"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/paddingItem"
+        android:layout_marginRight="@dimen/paddingItem"        
+        android:layout_below="@+id/lbRoi"
+        android:background="@android:color/darker_gray" />
+    
+    </RelativeLayout>
+</ScrollView>

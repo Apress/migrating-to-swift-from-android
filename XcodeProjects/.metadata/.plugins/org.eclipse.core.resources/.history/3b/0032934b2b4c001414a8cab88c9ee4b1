@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  RentalROI
+
+  Created by Sean on 9/6/14.
+  Copyright (c) 2014 PdaChoice. All rights reserved.
+*/
+
+"app_name" = "Rental ROI";
+"label_schedule" = "Schedule";
+"label_property" = "Property";
+"label_Amortization" = "Amortization";
+"label_monthlydetails" = "Monthly Details";
+"button_next" = "Next";
+
+/* RentalPropertyView */
+"morgtage" = "MORTGAGE";
+"operations" = "OPERATIONS";
+"purchasePrice" = "Purchase Price";
+"downPayment" = "Down Payment %";
+"loanAmount" = "Loan Amount";
+"interestRate" = "Interest Rate %";
+"mortgageTerm" = "Mortgage Term (Yr.)";
+"escrowAmount" = "Escrow Amount";
+"extraPayment" = "Extra Payment";
+"expenses" = "Expenses";
+"rent" = "Rent";
+
+/* EditTextView */
+"save" = "Save";
+"editTextSize" = "15";
+
+/* Monthly Details */
+"MortgagePayment" = "MORTGAGE PAYMENT";
+"no" = "No.";
+"principle" = "Principle";
+"interest" = "Interest";
+"escrow" = "Escrow";
+"addlPayment" = "Add\'l Payment";
+"mortgageBalance" = "Mortgage Balance";
+"investmentRoi" = "INVESTMENT";
+"equity" = "Equity";
+"cashInvest" = "Cash Investment";
+"roi" = "ROI";

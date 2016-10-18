@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CommonWidgets/ViewController.swift"
+            timestampString = "428988548.242831"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "doSwitchValueChanged(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CommonWidgets.ViewController.mSwitch.getter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UISwitch&gt;"
+                  moduleName = "CommonWidgets"
+                  urlString = "file:///Users/sliao/Google%20Drive/SwiftToiOS/iOSBook/CommonWidgets/CommonWidgets/ViewController.swift"
+                  timestampString = "428988556.601095"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CommonWidgets.ViewController.mSwitch.setter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UISwitch&gt;"
+                  moduleName = "CommonWidgets"
+                  urlString = "file:///Users/sliao/Google%20Drive/SwiftToiOS/iOSBook/CommonWidgets/CommonWidgets/ViewController.swift"
+                  timestampString = "428988556.602662"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CommonWidgets.ViewController.init (CommonWidgets.ViewController.Type)(nibName : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, bundle : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSBundle&gt;) -&gt; CommonWidgets.ViewController"
+                  moduleName = "CommonWidgets"
+                  urlString = "file:///Users/sliao/Google%20Drive/SwiftToiOS/iOSBook/CommonWidgets/CommonWidgets/ViewController.swift"
+                  timestampString = "428988556.602859"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CommonWidgets.ViewController.init (CommonWidgets.ViewController.Type)() -&gt; CommonWidgets.ViewController"
+                  moduleName = "CommonWidgets"
+                  urlString = "file:///Users/sliao/Google%20Drive/SwiftToiOS/iOSBook/CommonWidgets/CommonWidgets/ViewController.swift"
+                  timestampString = "428988556.603037"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "234">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CommonWidgets.ViewController.init (CommonWidgets.ViewController.Type)(coder : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSCoder&gt;) -&gt; CommonWidgets.ViewController"
+                  moduleName = "CommonWidgets"
+                  urlString = "file:///Users/sliao/Google%20Drive/SwiftToiOS/iOSBook/CommonWidgets/CommonWidgets/ViewController.swift"
+                  timestampString = "428988556.603176"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "234">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

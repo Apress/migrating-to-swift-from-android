@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RentalROI</string>
+    <string name="label_schedule">Schedule</string>
+    <string name="label_property">Property</string>
+    <string name="label_Amortization">Amortization</string>
+    <string name="label_monthlydetails">Monthly Details</string>
+    <string name="button_next">Next</string>
+
+    <!-- RentalPropertyView -->
+    <string name="morgtage">MORTGAGE</string>
+    <string name="operations">OPERATIONS</string>
+    <string name="purchasePrice">Purchase Price</string>
+    <string name="downPayment">Down Payment %</string>
+    <string name="loanAmount">Loan Amount</string>
+    <string name="interestRate">Interest Rate %</string>
+    <string name="mortgageTerm">Mortgage Term (Yr.)</string>
+    <string name="escrowAmount">Escrow Amount</string>
+    <string name="extraPayment">Extra Payment</string>
+    <string name="expenses">Expenses</string>
+    <string name="rent">Rent</string>
+
+    <!-- EditTextView -->
+    <string name="save">Save</string>
+    <integer name="editTextSize">15</integer>
+
+    <!-- Monthly Details -->
+    <string name="MortgagePayment">MORTGAGE PAYMENT</string>
+    <string name="no">No.</string>
+    <string name="principal">Principal</string>
+    <string name="interest">Interest</string>
+    <string name="escrow">Escrow</string>
+    <string name="addlPayment">Add\'l Payment</string>
+    <string name="mortgageBalance">Mortgage Balance</string>
+    <string name="investmentRoi">INVESTMENT ROI</string>
+    <string name="equity">Equity</string>
+    <string name="cashInvest">Cash Investment</string>
+    <string name="roi">ROI</string>
+        
+    
+</resources>

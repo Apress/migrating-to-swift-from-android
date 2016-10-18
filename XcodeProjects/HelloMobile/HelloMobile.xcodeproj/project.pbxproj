@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B32866D2196C6FD2007C7852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32866D1196C6FD2007C7852 /* AppDelegate.swift */; };
+		B32866D4196C6FD2007C7852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32866D3196C6FD2007C7852 /* ViewController.swift */; };
+		B32866D7196C6FD2007C7852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32866D5196C6FD2007C7852 /* Main.storyboard */; };
+		B32866D9196C6FD2007C7852 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32866D8196C6FD2007C7852 /* Images.xcassets */; };
+		B32866E5196C6FD2007C7852 /* HelloMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32866E4196C6FD2007C7852 /* HelloMobileTests.swift */; };
+		B32866EF196C7144007C7852 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32866EE196C7144007C7852 /* HelloViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B32866DF196C6FD2007C7852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B32866C4196C6FD2007C7852 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B32866CB196C6FD2007C7852;
+			remoteInfo = HelloMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B32866CC196C6FD2007C7852 /* HelloMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32866D0196C6FD2007C7852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B32866D1196C6FD2007C7852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B32866D3196C6FD2007C7852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B32866D6196C6FD2007C7852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B32866D8196C6FD2007C7852 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B32866DE196C6FD2007C7852 /* HelloMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32866E3196C6FD2007C7852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B32866E4196C6FD2007C7852 /* HelloMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMobileTests.swift; sourceTree = "<group>"; };
+		B32866EE196C7144007C7852 /* HelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B32866C9196C6FD2007C7852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B32866DB196C6FD2007C7852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B32866C3196C6FD2007C7852 = {
+			isa = PBXGroup;
+			children = (
+				B32866CE196C6FD2007C7852 /* HelloMobile */,
+				B32866E1196C6FD2007C7852 /* HelloMobileTests */,
+				B32866CD196C6FD2007C7852 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B32866CD196C6FD2007C7852 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B32866CC196C6FD2007C7852 /* HelloMobile.app */,
+				B32866DE196C6FD2007C7852 /* HelloMobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B32866CE196C6FD2007C7852 /* HelloMobile */ = {
+			isa = PBXGroup;
+			children = (
+				B32866D1196C6FD2007C7852 /* AppDelegate.swift */,
+				B32866D3196C6FD2007C7852 /* ViewController.swift */,
+				B32866D5196C6FD2007C7852 /* Main.storyboard */,
+				B32866D8196C6FD2007C7852 /* Images.xcassets */,
+				B32866CF196C6FD2007C7852 /* Supporting Files */,
+				B32866EE196C7144007C7852 /* HelloViewController.swift */,
+			);
+			path = HelloMobile;
+			sourceTree = "<group>";
+		};
+		B32866CF196C6FD2007C7852 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B32866D0196C6FD2007C7852 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B32866E1196C6FD2007C7852 /* HelloMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				B32866E4196C6FD2007C7852 /* HelloMobileTests.swift */,
+				B32866E2196C6FD2007C7852 /* Supporting Files */,
+			);
+			path = HelloMobileTests;
+			sourceTree = "<group>";
+		};
+		B32866E2196C6FD2007C7852 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B32866E3196C6FD2007C7852 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B32866CB196C6FD2007C7852 /* HelloMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B32866E8196C6FD2007C7852 /* Build configuration list for PBXNativeTarget "HelloMobile" */;
+			buildPhases = (
+				B32866C8196C6FD2007C7852 /* Sources */,
+				B32866C9196C6FD2007C7852 /* Frameworks */,
+				B32866CA196C6FD2007C7852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloMobile;
+			productName = HelloMobile;
+			productReference = B32866CC196C6FD2007C7852 /* HelloMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B32866DD196C6FD2007C7852 /* HelloMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B32866EB196C6FD2007C7852 /* Build configuration list for PBXNativeTarget "HelloMobileTests" */;
+			buildPhases = (
+				B32866DA196C6FD2007C7852 /* Sources */,
+				B32866DB196C6FD2007C7852 /* Frameworks */,
+				B32866DC196C6FD2007C7852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B32866E0196C6FD2007C7852 /* PBXTargetDependency */,
+			);
+			name = HelloMobileTests;
+			productName = HelloMobileTests;
+			productReference = B32866DE196C6FD2007C7852 /* HelloMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B32866C4196C6FD2007C7852 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = PdaChoice;
+				TargetAttributes = {
+					B32866CB196C6FD2007C7852 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					B32866DD196C6FD2007C7852 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = B32866CB196C6FD2007C7852;
+					};
+				};
+			};
+			buildConfigurationList = B32866C7196C6FD2007C7852 /* Build configuration list for PBXProject "HelloMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B32866C3196C6FD2007C7852;
+			productRefGroup = B32866CD196C6FD2007C7852 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B32866CB196C6FD2007C7852 /* HelloMobile */,
+				B32866DD196C6FD2007C7852 /* HelloMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B32866CA196C6FD2007C7852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32866D7196C6FD2007C7852 /* Main.storyboard in Resources */,
+				B32866D9196C6FD2007C7852 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B32866DC196C6FD2007C7852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B32866C8196C6FD2007C7852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32866EF196C7144007C7852 /* HelloViewController.swift in Sources */,
+				B32866D4196C6FD2007C7852 /* ViewController.swift in Sources */,
+				B32866D2196C6FD2007C7852 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B32866DA196C6FD2007C7852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32866E5196C6FD2007C7852 /* HelloMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B32866E0196C6FD2007C7852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B32866CB196C6FD2007C7852 /* HelloMobile */;
+			targetProxy = B32866DF196C6FD2007C7852 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B32866D5196C6FD2007C7852 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B32866D6196C6FD2007C7852 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B32866E6196C6FD2007C7852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B32866E7196C6FD2007C7852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B32866E9196C6FD2007C7852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HelloMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B32866EA196C6FD2007C7852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HelloMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B32866EC196C6FD2007C7852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloMobile.app/HelloMobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HelloMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		B32866ED196C6FD2007C7852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloMobile.app/HelloMobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HelloMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B32866C7196C6FD2007C7852 /* Build configuration list for PBXProject "HelloMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32866E6196C6FD2007C7852 /* Debug */,
+				B32866E7196C6FD2007C7852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B32866E8196C6FD2007C7852 /* Build configuration list for PBXNativeTarget "HelloMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32866E9196C6FD2007C7852 /* Debug */,
+				B32866EA196C6FD2007C7852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B32866EB196C6FD2007C7852 /* Build configuration list for PBXNativeTarget "HelloMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32866EC196C6FD2007C7852 /* Debug */,
+				B32866ED196C6FD2007C7852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B32866C4196C6FD2007C7852 /* Project object */;
+}
